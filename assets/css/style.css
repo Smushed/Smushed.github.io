@@ -120,35 +120,51 @@ nav {
 	border: 2px solid #a8a8a8;
 	position: absolute;
 }
+.portfolio-header {
+	background-color: #4aaaa5;
+	position: relative;
+	color: #fff;
+	font-weight: 200;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	text-align: center;
+	height: 25px;
+	padding-top: 12.5px;
+	top: 100px;
+}
 .project1 {
 	top: 5%;
 	left: 5%;
 	background-image: url("../../assets/images/Burning.jpg");
 	background-size: 225px 225px;
+	position: absolute;
 }
 .project2 {
 	top: 5%;
 	right: 5%;
 	background-image: url("../../assets/images/Landscape.jpg");
 	background-size: 225px 225px;
+	position: absolute;
 }
 .project3 {
 	top: 32%;
 	left: 38%;
 	background-image: url("../../assets/images/List.jpg");
 	background-size: 225px 225px;
+	position: absolute;
 }
 .project4 {
 	bottom: 5%;
 	left: 5%;
 	background-image: url("../../assets/images/OrangeMoon.jpg");
 	background-size: 225px 225px;
+	position: absolute;
 }
 .project5 {
 	bottom: 5%;
 	right: 5%;
 	background-image: url("../../assets/images/Peacock.jpg");
 	background-size: 225px 225px;
+	position: absolute;
 }
 /* Contact */
 .contact-form {
