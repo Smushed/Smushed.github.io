@@ -79,7 +79,7 @@ nav {
 .primary-header {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	border-bottom: 1px solid #ccc;
-	background-color: #fff;
+	background-color: #fff;	
 }
 /* Footer */
 .primary-footer {
@@ -148,7 +148,7 @@ nav {
 }
 .project3 {
 	top: 32%;
-	left: 38%;
+	left: 37%;
 	background-image: url("../../assets/images/List.jpg");
 	background-size: 225px 225px;
 	position: absolute;
@@ -241,15 +241,17 @@ body {
 }
 /* Grid */
 .container {
-	margin: 0  auto;
-	width: 80%;
+	margin: auto;
+	width: 960px;
+}
+.central-container {
+	margin: 50px;
+	padding: 50px 0;
 }
 .body-container {
 	width: 960px;
-	padding: 50px;
 	margin: 0 auto;
 	margin-top: 50px;
-	border: 2px black solid;
 	background: #fff;
 }
 /* Clearfix */
