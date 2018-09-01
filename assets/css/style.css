@@ -85,12 +85,11 @@ nav {
 .primary-footer {
 	background: #666;
 	height: 50px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
+	position: static;
 	width: 100%;
 	text-align: center;
 	border-top: 5px solid #4aaaa5;
+	margin-top: 50px;
 }
 .footer-text {
 	color: #a8a8a8;
@@ -166,6 +165,39 @@ nav {
 	background-image: url("../../assets/images/Peacock.jpg");
 	background-size: 225px 225px;
 	position: absolute;
+}
+/* Ugly portfolio page */
+.ugly-enclosing-box {
+	height: 600px;
+	position: relative;
+	padding-top: 25px;
+}
+.ugly-portfolio-box {
+	width: 225px;
+	height: 225px;
+	border: 2px solid #a8a8a8;
+	float: left;
+	margin: 20px;
+}
+.uglyproject1 {
+	background-image: url("../../assets/images/Burning.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject2 {
+	background-image: url("../../assets/images/Landscape.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject3 {
+	background-image: url("../../assets/images/List.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject4 {
+	background-image: url("../../assets/images/OrangeMoon.jpg");
+	background-size: 225px 225px;
+}
+.uglyproject5 {
+	background-image: url("../../assets/images/Peacock.jpg");
+	background-size: 225px 225px;
 }
 /* Contact */
 .contact-form {
@@ -248,6 +280,11 @@ body {
 	margin: 50px;
 	padding: 50px 0;
 }
+.ugly-central-container {
+	width: 760px;
+	margin: 50px;
+	padding: 50px 0;
+}
 .body-container {
 	width: 960px;
 	margin: 0 auto;
@@ -259,4 +296,5 @@ body {
 	content: "";
 	display: block;
 	clear: both;
+	overflow: auto;
 }
