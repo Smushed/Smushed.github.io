@@ -82,10 +82,12 @@ nav {
 	background-color: #fff;	
 }
 /* Footer */
+.push {
+	height: 50px;
+}
 .primary-footer {
 	background: #666;
 	height: 50px;
-	position: static;
 	width: 100%;
 	text-align: center;
 	border-top: 5px solid #4aaaa5;
@@ -270,6 +272,14 @@ body {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
+}
+.whole-website {
+	min-height: 100%;
+	margin-bottom: -55px;
+}
+html, body {
+	height: 100%;
+	margin: 0;
 }
 /* Grid */
 .container {
