@@ -83,15 +83,18 @@ nav {
 }
 /* Footer */
 .push {
-	height: 50px;
+	height: 105px;
 }
 .primary-footer {
 	background: #666;
 	height: 50px;
 	width: 100%;
+	position: fixed;
 	text-align: center;
 	border-top: 5px solid #4aaaa5;
 	margin-top: 50px;
+	bottom: 0;
+	left: 0;
 }
 .footer-text {
 	color: #a8a8a8;
@@ -246,6 +249,9 @@ nav {
 	font-size: 22px;
 	font-weight: 200;
 }
+.submit-button:hover {
+	background: #31726e;
+}
 /* Links in header & footer */
 .primary-header a {
 	color: #888;
@@ -264,7 +270,7 @@ a {
 body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	background-image: url("../../assets/images/vertical-waves.png")
+	background-image: url("../../assets/images/white_wall.png")
 }
 .body-header {
 	font-size: 44px;
@@ -272,14 +278,6 @@ body {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
-}
-.whole-website {
-	min-height: 100%;
-	margin-bottom: -55px;
-}
-html, body {
-	height: 100%;
-	margin: 0;
 }
 /* Grid */
 .container {
