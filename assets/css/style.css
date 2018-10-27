@@ -1,24 +1,30 @@
 body{
 	height: 100%;
+	background: black;
 }
 .portfolio
 .about-me {
 	display: inline-block;
 }
 .main{
-	background: blue;
+	background: lightblue;
 	height: 100vh;
 }
 .portfolio{
-	background: green;
+	background: lightcoral;
 	height: 50vh;
+	transition: transform 1s;
 }
 .portfolio:hover{
-	transform: scale(1.1);
+	transform: translate(-20px, 20px);
 }
 .about-me{
-	background: yellow;
+	background: peachpuff;
 	height: 50vh;
+	transition: transform 1s;
+}
+.about-me:hover{
+	transform: translate(-20px, -20px);
 }
 .mp-reset{
 	margin: 0;
