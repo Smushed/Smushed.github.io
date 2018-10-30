@@ -1,32 +1,55 @@
 body{
 	height: 100%;
-	background: black;
 }
+/* General Website Style */
+.mp-reset{
+	margin: 0;
+	padding: 0;
+}
+/* Index Page */
 .portfolio
 .about-me {
 	display: inline-block;
 }
 .main{
-	background: lightblue;
+	background: #add8e6;
 	height: 100vh;
 }
 .portfolio{
-	background: lightcoral;
+	background: #f08080;
 	height: 50vh;
 	transition: transform 1s;
+}
+.portfolio-box-background{
+	background: #a05555;
 }
 .portfolio:hover{
 	transform: translate(-20px, 20px);
 }
 .about-me{
-	background: peachpuff;
+	background: #ffdab9;
 	height: 50vh;
 	transition: transform 1s;
+}
+.about-box-background {
+	background: #a58f7c;
 }
 .about-me:hover{
 	transform: translate(-20px, -20px);
 }
-.mp-reset{
-	margin: 0;
-	padding: 0;
+/* Portfolio Page */
+.showcase {
+	margin: 20vh 0 0 0;
+	height: 60vh;
+	background: lightblue;
+	position: relative;
+	min-height: 400px;
+}
+.description{
+	background: lightcoral;
+	position: absolute;
+	top: 350px;
+	right: -50px;
+	height: 250px;
+	width: 100px;
 }
