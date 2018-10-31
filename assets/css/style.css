@@ -5,7 +5,7 @@
 }
 /* Index Page */
 .portfolio
-.about-me {
+.about-me-preview {
 	display: inline-block;
 }
 .main{
@@ -23,7 +23,7 @@
 .portfolio:hover{
 	transform: translate(-20px, 20px);
 }
-.about-me{
+.about-me-preview{
 	background: #ffdab9;
 	height: 50vh;
 	transition: transform 1s;
@@ -31,52 +31,84 @@
 .about-box-background {
 	background: #a58f7c;
 }
-.about-me:hover{
+.about-me-preview:hover{
 	transform: translate(-20px, -20px);
 }
 /* Portfolio Page */
 .showcase {
-	margin: 20vh 0 0 0;
+	margin: 15vh 0 0 0;
 	height: 60vh;
-	background: lightblue;
 	position: relative;
 	min-height: 400px;
 }
-/* Description that shows on large screens */
-.description{
+.project-1 {
+	background: lightblue;
+}
+.project-1-desc {
 	background: lightcoral;
+}
+.project-2-desc {
+	background: goldenrod;
+}
+.project-2 {
+	background: lightgreen;
+}
+.slide2 {
+	display: none;
+}
+/* Home Button on the Top */
+.header {
+	float: left;
+	position: relative;
+	height: 5vh;
+	width: 5vh;
+	background-size: 5vh 5vh;
+	margin-left: 50px;
+	background-image: url("../images/OrcFavicon.png")
+}
+/* The core of the portfolio */
+.description {
 	position: absolute;
-	top: 350px;
+	top: 300px;
 	right: -50px;
 	height: 250px;
 	width: 100px;
 }
-.portfolio-background{
+.portfolio-background {
 	background: darkgreen;
 	height: 100vh;
 }
 .right-arrow {
+	cursor: pointer;
 	position: relative;
 	height: 75px;
 	width: 75px;
 	background-size: 75px 75px;
 	background-image: url("../images/dottedRightArrow.jpg");
 	float: right;
-	margin-top: 45vh;
+	margin-top: 40vh;
 }
 .right-arrow:hover {
 	animation: bounceRight 1s infinite;
+	background-color: rgba(128, 128, 128, 0.212);
 }
 .left-arrow {
+	cursor: pointer;
 	height: 75px;
 	width: 75px;
 	background-size: 75px 75px;
 	background-image: url("../images/dottedLeftArrow.jpg");
 	float: left;
-	margin-top: 45vh;
+	margin-top: 40vh;
 }
 .left-arrow:hover {
 	animation: bounceLeft 1s infinite;
+	background-color: rgba(128, 128, 128, 0.212);
+}
+/* About Me */
+.about-me {
+	background: green;
+	margin-top: 25vh;
 }
 
 /* Animation for the arrows to move on hover */
