@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/OrcFavicon.png">
     <title>Document</title>
@@ -14,18 +14,46 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid about-me-background">
+        <!-- This should be a drop down to go to the other pages in here -->
         <div class="row">
-            <div class="d-none d-md-block col-md-2"></div>
-            <div class="col-12 col-md-8 about-me">
-                <img class="photo" src="assets/images/Profile.jpg">
+            <div class="col-12 mp-reset">
+                <a href="index.html">
+                    <div class="header"></div>
+                </a>
             </div>
-            <div class="d-none d-md-block col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="d-none d-md-block col-md-2 mp-reset"></div>
+            <div class="col-12 col-md-8 mp-reset">
+                <div class="row">
+                    <div class="col-12 mp-reset">
+                        <div class="about-me">
+                            <div class="title">About Me</div>
+                            <img class="photo" src="assets/images/Profile.jpg">
+                            <!-- Work in progress. Not happy with this, lots of rewriting -->
+                            <div class="bio">
+                                &emsp;My Name is Kevin Flerlage. I'm a native Chicagoian growing up and living here for 22 years.<br><br>
+                                &emsp;Prior to becoming interested in coding I earned my Business Administration - Finance
+                                degree studying at University of Wisconsin - Milwaukee. While attending classes I was the President of the German club as well as the Student Investment Club.<br><br>
+                                &emsp;After graduating from college I moved back to Illinois and began my career in accounting as an Accounts Payable Specialist for a company in Addison.
+                                At my first company I moved to a Financial Analyst role when I decided to move to the city work for my current employer Performance Trust.<br><br>
+                                &emsp;Currently, I am enrolled in night classes at Northwestern in their full stack coding
+                                bootcamp. At this course we are learning HTML, CSS, Javascript, Node, MangoDB as well
+                                as other tools to be successful in the technology field. It is my goal after this class
+                                to move to a position focused in technology and software engineering. <br>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-2 mp-reset"></div>
+            </div>
         </div>
     </div>
 
-    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-        crossorigin='anonymous'></script>
+    <script src='assets/JS/jquery-3.3.1.slim.min.js'></script>
     <script src="assets/JS/app.js"></script>
 </body>
 
