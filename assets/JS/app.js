@@ -1,18 +1,17 @@
-let currentSlide = 1;
+let currentSlide = 0;
 
 //TODO Make it so if scrolls to the right or the left
 $(".left-arrow").on("click", function () {
+    const nextSlide = currentSlide + 1
+    scrollCurrentSlide(currentSlide)
+        .then(advancePosition("backwards", currentSlide))
+    scrollNextSlide(nextSlide);
 
-
-    scrollCurrentSlide(currentSlide).then(advancePosition("backwards", currentSlide));
-
-
-    // setTimeout(function () { $(`.slide${currentSlide}`).show() }, 2000);
     console.log(currentSlide)
 })
 
 //TODO Make it so if scrolls to the right or the left
-$(".right-arrow").on("click", function () {
+$(`.right-arrow`).on(`click`, function () {
     // Shows and hides divs based on the current slide
     $(`.slide${currentSlide}`).hide();
 
@@ -29,20 +28,28 @@ $(".right-arrow").on("click", function () {
 const scrollCurrentSlide = function (currentSlide) {
     // Shows and hides divs based on the current slide
     return new Promise(function () {
-        $(`.slide${currentSlide}`).addClass("fadeOutLeftBig");
-        setTimeout(function () { $(`.slide${currentSlide}`).hide() }, 2000)
-    })
+        $(`.slide${currentSlide}`).addClass(`fadeOutLeftBig`);
+        setTimeout(function () { $(`.slide${currentSlide}`).hide() }, 1900)
+    });
+};
+
+const scrollNextSlide = function (nextSlide) {
+    //TODO Make the slide come up on button click
+    return new Promise(function () {
+        $(`.slide${nextSlide}`).show();
+        $(`.slide${nextSlide}`).addClass(`fadeInRightBig`);
+    });
 };
 
 const advancePosition = function (direction, currentSlide) {
     return new Promise(function () {
-        if (direction === "backwards") {
+        if (direction === `backwards`) {
             currentSlide--;
-            if (currentSlide < 1) {
+            if (currentSlide < 0) {
                 //If they are at the beginning of the slides, toggle to the end
-                currentSlide = 2;
-            } else if (currentSlide > 2) {
                 currentSlide = 1;
+            } else if (currentSlide > 1) {
+                currentSlide = 0;
             }
         }
         $(`.slide${currentSlide}`).hide();
