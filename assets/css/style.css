@@ -15,11 +15,24 @@ a:hover {
 	text-decoration: none;
 }
 /* Animation links to the animation spreadsheet*/
+.fadeInRightBig {
+	animation: fadeInRightBig 2s 1;
+}
+.fadeOutRightBig {
+	animation: fadeOutRightBig 2s 1;
+}
 .fadeOutLeftBig {
 	animation: fadeOutLeftBig 2s 1;
 }
-.fadeInRightBig {
-	animation: fadeInRightBig 2s 1;
+.fadeInLeftBig {
+	animation: fadeInLeftBig 2s 1;
+}
+/* Change the Z index for the portfolio scroll */
+.onBottom {
+	z-index: 1;
+}
+.onTop {
+	z-index: 2;
 }
 /* Home Button on the Top */
 /* TODO Make this an expanding nav bar */
@@ -108,6 +121,10 @@ a:hover {
 }
 .project-2 {
 	background: lightgreen;
+}
+.slide0
+.slide1 {
+	position: relative;
 }
 .slide1 {
 	display: none;
