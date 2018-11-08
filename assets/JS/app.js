@@ -4,7 +4,8 @@ let currentSlide = 1;
 $(".left-arrow").on("click", function () {
 
 
-    scrollCurrentSlide(currentSlide).then(advancePosition("backwards", currentSlide));
+    scrollCurrentSlide(currentSlide)
+    advancePosition("backwards")
 
 
     // setTimeout(function () { $(`.slide${currentSlide}`).show() }, 2000);
@@ -28,10 +29,8 @@ $(".right-arrow").on("click", function () {
 
 const scrollCurrentSlide = function (currentSlide) {
     // Shows and hides divs based on the current slide
-    return new Promise(function () {
-        $(`.slide${currentSlide}`).addClass("fadeOutLeftBig");
-        setTimeout(function () { $(`.slide${currentSlide}`).hide() }, 2000)
-    })
+    $(`.slide${currentSlide}`).addClass("fadeOutLeftBig");
+    setTimeout(function () { $(`.slide${currentSlide}`).hide() }, 1900);
 };
 
 const advancePosition = function (direction, currentSlide) {
@@ -45,6 +44,5 @@ const advancePosition = function (direction, currentSlide) {
                 currentSlide = 1;
             }
         }
-        $(`.slide${currentSlide}`).hide();
     })
 }
