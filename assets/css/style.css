@@ -18,6 +18,9 @@ a:hover {
 .fadeOutLeftBig {
 	animation: fadeOutLeftBig 2s 1;
 }
+.fadeInRightBig {
+	animation: fadeInRightBig 2s 1;
+}
 /* Home Button on the Top */
 /* TODO Make this an expanding nav bar */
 .header {
@@ -106,7 +109,7 @@ a:hover {
 .project-2 {
 	background: lightgreen;
 }
-.slide2 {
+.slide1 {
 	display: none;
 }
 /* The core of the portfolio */
