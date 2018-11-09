@@ -18,12 +18,19 @@
         <!-- This should be a drop down to go to the other pages in here -->
         <div class="row">
             <div class="col-12 mp-reset">
-                <a href="index.html">
-                    <div class="header"></div>
-                </a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="about-me.html">About Me</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
+            <!-- TODO Make the arrows show up on small screen -->
             <div class="d-none d-lg-block col-lg-2 mp-reset">
                 <!-- Slideshow button -->
                 <div class="left-arrow"></div>
@@ -58,16 +65,25 @@
                             An animals of the savannah hangman game written entirely in the front end with Javascript. It takes inputs onKeyUp on the window.
                         </div>
                     </div>
-                    <div class="d-sm-block d-lg-none small-description project-2-desc"></div>
+                    <div class="d-sm-block d-lg-none small-description project-2-desc">
+                        <div class="description-title">
+                            Project 2
+                        </div>
+                        <div class="description-text proj-1-text">
+                            An animals of the savannah hangman game written entirely in the front end with Javascript. It takes inputs onKeyUp on the window.
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="d-none d-md-block col-lg-2 mp-reset">
                 <!-- Slideshow button -->
+                <!-- TODO Make the arrows show up on small screen -->
                 <div class="right-arrow"></div>
             </div>
         </div>
     </div>
 
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
     <script src='assets/JS/jquery-3.3.1.slim.min.js'></script>
     <script src="assets/JS/app.js"></script>
 </body>
