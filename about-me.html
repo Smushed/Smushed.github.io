@@ -16,14 +16,20 @@
 <body>
 
     <div class="container-fluid about-me-background">
-        <!-- This should be a drop down to go to the other pages in here -->
+        <!-- Drop down to navigate to the other web pages -->
         <div class="row">
             <div class="col-12 mp-reset">
-                <a href="index.html">
-                    <div class="dropdownButton"></div>
-                </a>
+                <div class="dropdown">
+                    <button class="menu" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Dropdown-button">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Main Content of the page -->
         <div class="row">
             <div class="d-none d-md-block col-md-2 mp-reset"></div>
             <div class="col-12 col-md-8 mp-reset">
@@ -54,8 +60,8 @@
         </div>
     </div>
 
-    <script src="assets/JS/popper.min.js"></script>
     <script src='assets/JS/jquery-3.3.1.slim.min.js'></script>
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
     <script src="assets/JS/app.js"></script>
 </body>
 
