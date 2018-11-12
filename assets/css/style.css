@@ -130,6 +130,7 @@ a:hover {
 }
 /* Portfolio Page */
 .showcase {
+	margin: auto;
 	margin-top: 17vh;
 	height: 600px;
 	position: relative;
