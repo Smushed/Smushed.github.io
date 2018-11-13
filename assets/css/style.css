@@ -133,7 +133,6 @@ a:hover {
 	margin: auto;
 	margin-top: 17vh;
 	height: 600px;
-	position: relative;
 	min-height: 400px;
 	width: 100%;
 	max-width: 1100px;
@@ -164,9 +163,9 @@ a:hover {
 }
 /* The core of the portfolio */
 .description {
-	position: absolute;
-	top: 275px;
-	right: 	-150px;
+	float: right;
+	margin-top: -485px;
+	margin-right: 5%;
 	height: 350px;
 	width: 300px;
 	box-shadow: -10px 10px #1E3849;
