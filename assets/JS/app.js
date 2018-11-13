@@ -1,3 +1,5 @@
+//TODO Delete everything below
+//It's for the carousel that I did myself, bootstrap's is much better
 let currentSlide = 0;
 
 $(`.left-arrow`).on(`click`, function () {
