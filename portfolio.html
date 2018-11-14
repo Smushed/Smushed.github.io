@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-12 mp-reset">
                 <div class="dropdown">
-                    <button class="menu top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="menu top" tabindex="1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     </button>
                     <div class="dropdown-menu" aria-labelledby="Dropdown-button">
                         <a class="dropdown-item" href="index.html">Home</a>
@@ -31,7 +31,12 @@
         <!-- Main Content of the page -->
         <div class="row">
             <div class="col-12 mp-reset">
-                <div class="carousel slide" id="portfolio-carousel" data-ride="carousel">
+                <div class="carousel slide" data-interval="false" data-keyboard="true" id="portfolio-carousel" data-ride="carousel">
+                    <!-- Indicator at the bottom of the display to show what slide you're on. Update these as more pages -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="showcase project-1"></div>
@@ -57,13 +62,13 @@
                         </div>
                     </div>
                     <div class="top">
-                        <a class="carousel-control-prev left-arrow" href="#portfolio-carousel" role="button" data-slide="prev">
+                        <a class="carousel-control-prev left-arrow" tabindex="2" href="#portfolio-carousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                     </div>
                     <div class="top">
-                        <a class="carousel-control-next right-arrow" href="#portfolio-carousel" role="button" data-slide="next">
+                        <a class="carousel-control-next right-arrow" tabindex="3" href="#portfolio-carousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -73,9 +78,10 @@
         </div>
     </div>
 
-    <script src='assets/JS/jquery-3.3.1.slim.min.js'></script>
+    <script src="assets/JS/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
     <script src="assets/JS/app.js"></script>
+    <script src="assets/JS/portfolioapp.js"></script>
 </body>
 
 </html>
