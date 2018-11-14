@@ -17,6 +17,9 @@ a:hover {
 .top {
 	z-index: 10;
 }
+.clearfix {
+	overflow: auto;
+}
 /* Customizing the menu button outside of just bootstrap*/
 .menu {
 	margin-left: 50px;
@@ -135,6 +138,9 @@ a:hover {
 	margin-left: 35%;
 	margin-bottom: 15px;
 }
+.description-text {
+	padding: 0 15px 5px 15px;
+}
 /* Portfolio Images */
 .portfolio-background {
 	background-image: url("../images/portfolioBackground.jpg");
@@ -233,5 +239,11 @@ a:hover {
 		max-width: 100%;
 		margin-top: -70px;
 		box-shadow: -10px -10px #1E3849;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.showcase {
+		margin-top: 75px;
 	}
 }
