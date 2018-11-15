@@ -114,16 +114,16 @@ a:hover {
 	background-position: center;
 	background-size: auto 100%;
 }
-.project-1-desc {
+.project-1-color {
 	background: lightcoral;
 }
-.project-2-desc {
+.project-2-color {
 	background: goldenrod;
 }
 .project-2 {
 	background: lightgreen;
 }
-/* The core of the portfolio */
+/* The description of the project */
 .description {
 	float: right;
 	margin-top: -495px;
@@ -141,11 +141,34 @@ a:hover {
 .description-text {
 	padding: 0 15px 5px 15px;
 }
+.view-project {
+	padding: 0 5px;
+	border-radius: 15%;
+	width: 100px;
+	border: 2px solid black;
+	position: relative;
+	left: 100px;
+}
+.view-project:focus {
+	outline: none;
+}
+.view-project:hover {
+	box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.582);
+	transition-duration: 300ms;
+}
+.view-project:active {
+	background: rgb(141, 94, 94);
+	transform: translateY(2px);
+}
+.project-1-button {
+	background: rgb(224, 150, 150);
+}
 /* Portfolio Images */
 .portfolio-background {
 	background-image: url("../images/portfolioBackground.jpg");
 	height: 100vh;
 }
+/* Scrolling buttons for the portfolio page */
 .right-arrow {
 	background: rgba(128, 128, 128, 0.85);
 	cursor: pointer;
@@ -245,5 +268,8 @@ a:hover {
 	}
 	.showcase {
 		margin-top: 75px;
+	}
+	.view-project {
+		left: 175px;
 	}
 }
