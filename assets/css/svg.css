@@ -1,0 +1,10 @@
+.svgthing {
+    fill: rgb(179, 0, 0);
+    margin-top: 50vh;
+}
+.svgthing:hover {
+    animation: bounce 1s infinite;
+}
+.bounce{
+    animation: bounce 1s infinite;
+}
