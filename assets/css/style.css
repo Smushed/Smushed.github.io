@@ -5,6 +5,7 @@
 }
 body {
 	font-family: 'Oswald', sans-serif;
+	height: 100vh;
 }
 a {
 	color: black;
@@ -228,6 +229,11 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
+}
+/* SVG Styling */
+canvas[resize] {
+	width: 100%;
+	height: 100%;
 }
 
 /* Animation for the arrows to move on hover */
