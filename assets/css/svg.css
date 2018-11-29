@@ -8,3 +8,26 @@
 .bounce{
     animation: bounce 1s infinite;
 }
+/* Need these two below to make the canvas fit nicely in the div */
+#myCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+.whole-page {
+    height: 100vh;
+    margin: 0;
+}
+svg{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+#back-triangle {
+    fill:#9B83C1;
+    box-shadow:-70px 10px black;
+}
+#back-triangle:hover {
+    animation: bounceRight 1s infinite;
+
+}
