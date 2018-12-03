@@ -243,17 +243,20 @@ svg{
 	overflow: hidden;
 }
 /* About me background and SVGs */
-#purple-am-triangle {
+.purple-triangle {
     fill:#9B83C1;
 }
-#blue-am-triangle {
+.light-blue-triangle {
     fill:#71D3E2;
 }
-#yellow-am-triangle {
+.yellow-triangle {
     fill: #EBF595;
 }
-#red-am-triangle {
+.red-triangle {
     fill: #EC5A5A;
+}
+.pink-triangle {
+	fill: #D18CBB;
 }
 /* Animation for the arrows to move on hover */
 @keyframes bounceRight {
