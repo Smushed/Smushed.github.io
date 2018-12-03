@@ -21,6 +21,15 @@ a:hover {
 .clearfix {
 	overflow: auto;
 }
+svg{
+    margin: 0;
+    height: 100vh;
+	width: 100%;
+}
+/* No height so the SVGs sit properly on the page */
+.no-height {
+	height: 0;
+}
 /* Customizing the menu button outside of just bootstrap*/
 .menu {
 	margin-left: 50px;
@@ -145,10 +154,11 @@ a:hover {
 .view-project {
 	padding: 0 5px;
 	border-radius: 15%;
-	width: 100px;
+	width: 120px;
+	height: 35px;
 	border: 2px solid black;
 	position: relative;
-	left: 100px;
+	left: 90px;
 }
 .view-project:focus {
 	outline: none;
@@ -162,7 +172,11 @@ a:hover {
 	transform: translateY(2px);
 }
 .project-1-button {
+	margin-top: 50px;
 	background: rgb(224, 150, 150);
+}
+.project-2-button {
+	background: rgb(224, 195, 122);
 }
 /* Portfolio Images */
 .portfolio-background {
@@ -224,18 +238,23 @@ a:hover {
 	margin-bottom: 50px;
 }
 .about-me-background {
-	background-image: url("../images/aboutMe.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 100vh;
+	background-image: linear-gradient(#56737E, #354A4E);
+	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
+	overflow: hidden;
 }
-/* SVG Styling */
-canvas[resize] {
-	width: 100%;
-	height: 100%;
+/* About me background and SVGs */
+#purple-am-triangle {
+    fill:#9B83C1;
 }
-
+#blue-am-triangle {
+    fill:#71D3E2;
+}
+#yellow-am-triangle {
+    fill: #EBF595;
+}
+#red-am-triangle {
+    fill: #EC5A5A;
+}
 /* Animation for the arrows to move on hover */
 @keyframes bounceRight {
 	0% 			{ transform:translateX(-1.5px); }
@@ -269,6 +288,9 @@ canvas[resize] {
 		margin-top: -70px;
 		box-shadow: -10px -10px #1E3849;
 	}
+	.description-title{
+		margin-left: 40%;
+	}
 	.carousel-indicators {
 		display: none;
 	}
@@ -276,6 +298,9 @@ canvas[resize] {
 		margin-top: 75px;
 	}
 	.view-project {
-		left: 175px;
+		left: 170px;
+	}
+	.project-1-button {
+		margin-top: 30px;
 	}
 }

@@ -15,9 +15,9 @@
 
 <body>
 
-    <div class="container-fluid about-me-background">
+    <div class="container-fluid about-me-background mp-reset">
         <!-- Drop down to navigate to the other web pages -->
-        <div class="row">
+        <div class="row no-height">
             <div class="col-12 mp-reset">
                 <div class="dropdown">
                     <button class="menu top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" tabindex="1">
@@ -30,7 +30,7 @@
             </div>
         </div>
         <!-- Main Content of the page -->
-        <div class="row">
+        <div class="row no-height">
             <div class="d-none d-md-block col-md-2 mp-reset"></div>
             <div class="col-12 col-md-8 mp-reset">
                 <div class="row">
@@ -40,17 +40,10 @@
                             <img class="photo" src="assets/images/Profile.jpg">
                             <!-- Work in progress. Not happy with this, lots of rewriting -->
                             <div class="bio">
-                                &emsp;My Name is Kevin Flerlage. I'm a native Chicagoian growing up and living here for 22 years.<br><br>
-                                &emsp;Prior to becoming interested in coding I earned my Business Administration - Finance
-                                degree studying at University of Wisconsin - Milwaukee. While attending classes I was the President of the German club as well as the Student Investment Club.<br><br>
-                                &emsp;After graduating from college I moved back to Illinois and began my career in accounting as an Accounts Payable Specialist for a company in Addison.
-                                At my first company I moved to a Financial Analyst role when I decided to move to the city work for my current employer Performance Trust.<br><br>
-                                &emsp;Currently, I am enrolled in night classes at Northwestern in their full stack coding
-                                bootcamp. At this course we are learning HTML, CSS, Javascript, Node, MangoDB as well
-                                as other tools to be successful in the technology field. It is my goal after this class
-                                to move to a position focused in technology and software engineering. <br>
-
-
+                                <button class="resume">Resume</button>
+                                <button class="github">GitHub</button>
+                                <button class="linkedin">LinkedIn</button>
+                                <button class="email">Email</button>
                             </div>
                         </div>
                     </div>
@@ -58,9 +51,28 @@
                 <div class="d-none d-md-block col-md-2 mp-reset"></div>
             </div>
         </div>
+        <!-- SVG for the background -->
+        <svg class="background-svg">
+            <!-- Filter is the drop shadow for the SVG -->
+            <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="4" /> <!-- stdDeviation is how much to blur -->
+                <feOffset dx="2" dy="2" result="offsetblur" /> <!-- how much to offset -->
+                <feComponentTransfer>
+                    <feFuncA type="linear" slope="0.5" /> <!-- slope is the opacity of the shadow -->
+                </feComponentTransfer>
+                <feMerge>
+                    <feMergeNode /> <!-- this contains the offset blurred image -->
+                    <feMergeNode in="SourceGraphic" /> <!-- this contains the element that the filter is applied to -->
+                </feMerge>
+            </filter>
+            <polygon id="purple-am-triangle" points="1400,600 1850,1100 900,1100" style="filter:url(#dropshadow)"></polygon>
+            <polygon id="blue-am-triangle" points="1200,500 1700,1100 600,1100" style="filter:url(#dropshadow)"></polygon>
+            <polygon id="yellow-am-triangle" points="775,200 1450,1100 125,1100" style="filter:url(#dropshadow)"></polygon>
+            <polygon id="red-am-triangle" points="525,400 1075,1100 -50,1100" style="filter:url(#dropshadow)"></polygon>
+        </svg>
     </div>
 
-    <script src='assets/JS/jquery-3.3.1.slim.min.js'></script>
+    <script src="assets/JS/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
 </body>
 
