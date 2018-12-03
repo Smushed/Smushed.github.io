@@ -26,6 +26,10 @@ svg{
     height: 100vh;
 	width: 100%;
 }
+/* No height so the SVGs sit properly on the page */
+.no-height {
+	height: 0;
+}
 /* Customizing the menu button outside of just bootstrap*/
 .menu {
 	margin-left: 50px;
@@ -235,6 +239,8 @@ svg{
 }
 .about-me-background {
 	background-image: linear-gradient(#56737E, #354A4E);
+	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
+	overflow: hidden;
 }
 /* About me background and SVGs */
 #purple-am-triangle {
@@ -249,7 +255,6 @@ svg{
 #red-am-triangle {
     fill: #EC5A5A;
 }
-
 /* Animation for the arrows to move on hover */
 @keyframes bounceRight {
 	0% 			{ transform:translateX(-1.5px); }
