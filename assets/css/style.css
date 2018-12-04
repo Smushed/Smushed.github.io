@@ -59,10 +59,7 @@ svg{
 	display: inline-block;
 }
 .main{
-	background-image: url("../images/mainPage.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: #23B0A8;
 	height: 100vh;
 }
 .main-text {
@@ -178,10 +175,15 @@ svg{
 .project-2-button {
 	background: rgb(224, 195, 122);
 }
-/* Portfolio Images */
+/* Portfolio background & SVG */
 .portfolio-background {
-	background-image: url("../images/portfolioBackground.jpg");
-	height: 100vh;
+	background-image: linear-gradient(rgb(20, 37, 48), #1E3849);
+	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
+	overflow: hidden;
+}
+.svg-background {
+	position: fixed;
+	bottom: 0;
 }
 /* Scrolling buttons for the portfolio page */
 .right-arrow {
@@ -191,6 +193,7 @@ svg{
 	width: 75px;
 	float: right;
 	margin-top: 40vh;
+	margin-right: 25px;
 	border-radius: 50%;
 }
 .right-arrow:hover {
@@ -203,6 +206,7 @@ svg{
 	width: 75px;
 	float: left;
 	margin-top: 40vh;
+	margin-left: 25px;
 	border-radius: 50%;
 }
 .left-arrow:hover {
@@ -242,21 +246,54 @@ svg{
 	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
 	overflow: hidden;
 }
-/* About me background and SVGs */
+/* SVG colorings */
 .purple-triangle {
     fill:#9B83C1;
 }
 .light-blue-triangle {
-    fill:#71D3E2;
+    fill:rgb(112, 208, 223);
 }
-.yellow-triangle {
-    fill: #EBF595;
+.baby-blue-triangle {
+    fill:rgb(135, 232, 247);
 }
 .red-triangle {
     fill: #EC5A5A;
 }
 .pink-triangle {
 	fill: #D18CBB;
+}
+.mango-triangle {
+	fill: rgb(251, 204, 52);
+}
+.transparent-mango-triangle {
+	fill: rgba(240, 195, 47, 0.568);
+}
+.orange-triangle {
+	fill: #F5A036;
+}
+.forest-triangle {
+	fill: #6BC28B;
+}
+.lime-triangle {
+	fill: #C5DB4A;
+}
+.dark-lime-triangle {
+	fill: #B5CA47;
+}
+.blue-triangle {
+	fill: #4A6EE6;
+}
+.dull-blue-triangle {
+	fill: #74A0EB;
+}
+.dark-blue-triangle {
+	fill: #2248D1;
+}
+.dark-magenta-triangle {
+	fill: #9E3569;
+}
+.magenta-triangle {
+	fill: #C41570;
 }
 /* Animation for the arrows to move on hover */
 @keyframes bounceRight {
