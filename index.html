@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/OrcFavicon.png">
+    <title>Kevin Flerlage</title>
+</head>
+
+<body id="top">
+    <!-- TODO Make the mountains animate on hover -->
+    <div class="container-fluid">
+        <div class="row index-background main">
+            <div class="col-sm-12 col-md-10 mp-reset">
+                <div class="main-text">
+                    <!-- TODO Make name come in, maybe through drawing to page via animation -->
+                    Kevin Flerlage
+                </div>
+                <svg class="svg-background">
+                    <!-- Filter is the drop shadow for the SVG -->
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+                        <!-- stdDeviation is how much to blur -->
+                        <feOffset dx="2" dy="2" result="offsetblur" /> <!-- how much to offset -->
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5" /> <!-- slope is the opacity of the shadow -->
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode /> <!-- this contains the offset blurred image -->
+                            <feMergeNode in="SourceGraphic" />
+                            <!-- this contains the element that the filter is applied to -->
+                        </feMerge>
+                    </filter>
+                    <polygon class="mango-triangle" points="800,450 1350,1100 200,1100" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="transparent-mango-triangle" points="1000,550 1100,1100 50,900" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="light-blue-triangle" points="1000,550 1200,1100 200,1100" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="baby-blue-triangle" points="1000,550 1200,1100 900,1100"></polygon>
+                    <polygon class="dark-lime-triangle" points="250,750 700,1100 -250,1100" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="lime-triangle" points="250,750 475,1100 0,1100"></polygon>
+                    <polygon class="dull-blue-triangle" points="1160,810 1240,1100 1000,1100" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="blue-triangle" points="1150,775 1440,1100 1175,1100" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="dark-blue-triangle" points="1150,775 1230,1100 1175,1100"></polygon>
+                    <polygon class="dark-magenta-triangle" points="700,875 100,1000 1075,1100" style="filter:url(#dropshadow)"></polygon>
+                    <polygon class="magenta-triangle" points="700,875 600,1000 1075,1100"></polygon>
+                </svg>
+            </div>
+            <div class="col-sm-12 col-md-2 mp-reset">
+                <div class="link-list" id="p1">
+                    <div class="index-link item-1 text-right"><a href="/portfolio.html">Portfolio</a></div>
+                    <div class="index-link item-2 text-right">About Me</div>
+                    <div class="index-link item-3 text-right">Resume</div>
+                    <div class="index-link item-4 text-right">LinkedIn</div>
+                    <div class="index-link item-5 text-right">GitHub</div>
+                    <div class="index-link item-6 text-right">k.j.flerlage@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='assets/JS/jquery-3.3.1.slim.min.js'></script>
+    <script src='assets/JS/linkPreview.js'></script>
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
