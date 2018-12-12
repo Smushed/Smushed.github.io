@@ -62,13 +62,14 @@ svg{
 	background: #23B0A8;
 	height: 100vh;
 }
-.index-link {
+.index-link-box {
 	height: 16.66vh;
-	position: relative;
-	transform: translateY(25%);
+}
+.index-link {
 	margin-right: 25px;
 	font-size: 24px;
 	color: #B4E0E9;
+	position: relative;
 }
 .main-text {
 	margin-left: 2%;
