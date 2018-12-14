@@ -64,12 +64,18 @@ svg{
 }
 .index-link-box {
 	height: 16.66vh;
+	padding: 35px 0;
 }
 .index-link {
-	margin-right: 25px;
+	width: 100%;
+	padding-right: 25px;
+	padding-top: 10%;
 	font-size: 24px;
 	color: #B4E0E9;
-	position: relative;
+	position: absolute;
+}
+.index-link-box:hover {
+	animation: fade-in 2s 0.25s 1;
 }
 .main-text {
 	margin-left: 2%;
@@ -319,6 +325,9 @@ svg{
 	25%, 75% 	{ transform:translateX(5px); }
 	50% 		{ transform:translateX(10px); }
 	100% 		{ transform:translateX(0); }
+}
+@keyframes fade-in {
+	
 }
 
 /* Media queries to make the description drop down in portfolio */
