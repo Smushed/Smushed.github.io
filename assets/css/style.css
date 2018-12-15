@@ -63,19 +63,25 @@ svg{
 	height: 100vh;
 }
 .index-link-box {
-	height: 16.66vh;
-	padding: 35px 0;
+	height: 11vh;
+	margin: 4.8vh 0;
+	border-radius: 2px;
+	background: #23B0A8;
+	background: linear-gradient(to right, #23B0A8, blue);
+	background-size: 200% 100%;
+	background-position: left bottom;
+	transition: all 1.25s ease;
+}
+/* http://jsfiddle.net/75Umu/3/ */
+.index-link-box:hover {
+	background-position: right bottom;
 }
 .index-link {
 	width: 100%;
 	padding-right: 25px;
-	padding-top: 10%;
 	font-size: 24px;
 	color: #B4E0E9;
 	position: absolute;
-}
-.index-link-box:hover {
-	animation: fade-in 2s 0.25s 1;
 }
 .main-text {
 	margin-left: 2%;
