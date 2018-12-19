@@ -67,7 +67,7 @@ svg{
 	margin: 7vh 0;
 	border-radius: 2px;
 	background: #23B0A8;
-	background: linear-gradient(to right, #23B0A8 50%, #496EE6 50%);
+	background: linear-gradient(to right, rgba(35, 176, 169, 0) 50%, #496EE6 50%);
 	background-size: 200% 100%;
 	background-position: left bottom;
 	transition: all 1.25s ease;
@@ -79,6 +79,7 @@ svg{
 .index-link {
 	width: 100%;
 	padding-right: 25px;
+	padding-top: 5%;
 	font-size: 24px;
 	color: #B4E0E9;
 	position: absolute;
