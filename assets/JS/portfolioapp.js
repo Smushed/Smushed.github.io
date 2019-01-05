@@ -1,13 +1,18 @@
 let currentSlide = 1;
 
+$(`.carousel`).on(`slide.bs.carousel`, function (event) {
+    console.log(event.direction)
+    changeBackground(event.direction)
+});
+
 const changeBackground = (direction) => {
-    if (direction === `back`) {
+    if (direction === `right`) {
         if (currentSlide === 1) {
             currentSlide = 2;
         } else {
             currentSlide--;
         };
-    } else if (direction === `forward`) {
+    } else if (direction === `left`) {
         if (currentSlide === 2) {
             currentSlide = 1;
         } else {
@@ -19,9 +24,9 @@ const changeBackground = (direction) => {
 
 const updateBackgroundColor = (currentSlide) => {
     if (currentSlide === 1) {
-        $(`.portfolio-background`).css({ "background-image": `linear-gradient(rgb(29, 55, 73), rgb(29, 55, 73))` });
+        $(`.portfolio-background`).css({ "background-color": `rgb(29, 55, 73)` });
     } else {
-        $(`.portfolio-background`).css({ "background-image": `linear-gradient(rgb(47, 73, 30), rgb(47, 73, 30))` });
+        $(`.portfolio-background`).css({ "background-color": `rgb(47, 73, 30)` });
     };
 };
 
@@ -37,6 +42,3 @@ $(document).keyup(e => {
         changeBackground(`forward`);
     };
 });
-
-$(`.left-arrow`).on(`click`, () => { changeBackground(`back`) });
-$(`.right-arrow`).on(`click`, () => { changeBackground(`forward`) });
