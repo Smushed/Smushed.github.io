@@ -15,28 +15,6 @@
 
 <body id="top">
     <div class="container-fluid portfolio-background mp-reset">
-        <svg class="svg-background">
-            <!-- Filter is the drop shadow for the SVG -->
-            <filter id="dropshadow" height="130%">
-                <feGaussianBlur in="SourceAlpha" stdDeviation="4" /> <!-- stdDeviation is how much to blur -->
-                <feOffset dx="2" dy="2" result="offsetblur" /> <!-- how much to offset -->
-                <feComponentTransfer>
-                    <feFuncA type="linear" slope="0.5" /> <!-- slope is the opacity of the shadow -->
-                </feComponentTransfer>
-                <feMerge>
-                    <feMergeNode /> <!-- this contains the offset blurred image -->
-                    <feMergeNode in="SourceGraphic" /> <!-- this contains the element that the filter is applied to -->
-                </feMerge>
-            </filter>
-            <polygon class="pink-triangle" points="1800,700 2350,1100 1200,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="purple-triangle" points="1200,600 1750,1100 600,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="light-blue-triangle" points="1300,600 1900,1100 700,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="forest-triangle" points="450,550 1100,1100 -225,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="orange-triangle" points="250,675 725,1100 -325,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="lime-triangle" points="675,675 1150,1100 175,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="mango-triangle" points="125,650 600,1100 -375,1100" style="filter:url(#dropshadow)"></polygon>
-            <polygon class="red-triangle" points="990,500 1600,1100 300,1100" style="filter:url(#dropshadow)"></polygon>
-        </svg>
         <!-- This should be a drop down to go to the other pages in here -->
         <div class="row no-height">
             <div class="col-12 mp-reset">
@@ -53,8 +31,7 @@
         <!-- Main Content of the page -->
         <div class="row">
             <div class="col-12 mp-reset">
-                <div class="carousel slide whole-carousel clearfix" data-interval="false" data-keyboard="true" id="portfolio-carousel"
-                    data-ride="carousel">
+                <div class="carousel slide whole-carousel clearfix" data-interval="false" data-keyboard="true" id="portfolio-carousel" data-ride="carousel">
                     <!-- Indicator at the bottom of the display to show what slide you're on. Update these as more pages -->
                     <ol class="carousel-indicators">
                         <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
@@ -95,15 +72,13 @@
                         </div>
                     </div>
                     <div class="top">
-                        <a class="carousel-control-prev left-arrow" tabindex="2" href="#portfolio-carousel" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev left-arrow" tabindex="2" href="#portfolio-carousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                     </div>
                     <div class="top">
-                        <a class="carousel-control-next right-arrow" tabindex="4" href="#portfolio-carousel" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next right-arrow" tabindex="4" href="#portfolio-carousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -115,7 +90,7 @@
 
     <script src="assets/JS/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
-    <script src="assets/JS/portfolioApp.js"></script>
+    <script src="assets/JS/portfolioapp.js"></script>
 </body>
 
 </html>

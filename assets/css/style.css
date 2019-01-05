@@ -200,7 +200,7 @@ svg{
 }
 /* Portfolio background & SVG */
 .portfolio-background {
-	background-image: linear-gradient(rgb(20, 37, 48), #1E3849);
+	background-image: linear-gradient(rgb(20, 37, 48), rgb(29, 55, 73));
 	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
 	overflow: hidden;
 }
