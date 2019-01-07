@@ -14,40 +14,39 @@
     <title>Kevin Flerlage</title>
 </head>
 
-<svg class="svg-background">
-    <!-- Filter is the drop shadow for the SVG -->
-    <filter id="dropshadow" height="130%">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
-        <!-- stdDeviation is how much to blur -->
-        <feOffset dx="2" dy="2" result="offsetblur" /> <!-- how much to offset -->
-        <feComponentTransfer>
-            <feFuncA type="linear" slope="0.5" /> <!-- slope is the opacity of the shadow -->
-        </feComponentTransfer>
-        <feMerge>
-            <feMergeNode /> <!-- this contains the offset blurred image -->
-            <feMergeNode in="SourceGraphic" />
-            <!-- this contains the element that the filter is applied to -->
-        </feMerge>
-    </filter>
-    <polygon class="mango-triangle" points="800,450 1350,1100 200,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="transparent-mango-triangle" points="1000,550 1100,1100 50,900" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="dark-lime-triangle" points="1300,600 950,1000 1800,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="light-blue-triangle" points="1000,550 1200,1100 200,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="baby-blue-triangle" points="1000,550 1200,1100 900,1100"></polygon>
-    <polygon class="dark-lime-triangle" points="250,750 700,1100 -250,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="lime-triangle" points="250,750 475,1100 0,1100"></polygon>
-    <polygon class="dull-blue-triangle" points="1160,810 1240,1100 1000,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="blue-triangle" points="1150,775 1440,1100 1175,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="dark-blue-triangle" points="1150,775 1230,1100 1175,1100"></polygon>
-    <polygon class="dark-magenta-triangle" points="700,875 100,1000 1075,1100" style="filter:url(#dropshadow)"></polygon>
-    <polygon class="magenta-triangle" points="700,875 600,1000 1075,1100"></polygon>
-</svg>
-
-<body id="top">
+<body id="top" class="main">
+    <svg class="svg-background" viewbox="0 0 100 100" preserveAspectRatio="xMidYMax meet">
+        <!-- Filter is the drop shadow for the SVG -->
+        <filter id="dropshadow" height="130%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+            <!-- stdDeviation is how much to blur -->
+            <feOffset dx="1" dy="0" result="offsetblur" /> <!-- how much to offset -->
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.5" /> <!-- slope is the opacity of the shadow -->
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode /> <!-- this contains the offset blurred image -->
+                <feMergeNode in="SourceGraphic" />
+                <!-- this contains the element that the filter is applied to -->
+            </feMerge>
+        </filter>
+        <polygon class="mango-triangle" points="-20,100 32,45 80,100" style="filter:url(#dropshadow)"></polygon>
+        <polygon class="transparent-mango-triangle" points="-40,92 53,55 60,100"></polygon>
+        <polygon class="dark-lime-triangle" points="50,100 85,61 125,100" style="filter:url(#dropshadow)"></polygon>
+        <polygon class="light-blue-triangle" points="-10,100 53,55 60,100" style="filter:url(#dropshadow)"></polygon>
+        <polygon class="baby-blue-triangle" points="42,100 53,55 70,100"></polygon>
+        <polygon class="dark-lime-triangle" points="-55,100 -25,78 5,100" style="filter:url(#dropshadow)"></polygon>
+        <polygon class="lime-triangle" points="-40,100 -25,78 -11,100"></polygon>
+        <polygon class="dull-blue-triangle" points="60,100 71,85 75,100" style="filter:url(#dropshadow)"></polygon>
+        <polygon class="blue-triangle" points="72,100 70,80 85,100"></polygon>
+        <polygon class="dark-blue-triangle" points="72,100 70,80 76,100"></polygon>
+        <polygon class="dark-magenta-triangle" points="-25,100 22,90 40,100"></polygon>
+        <polygon class="magenta-triangle" points="8,100 22,90 40,100"></polygon>
+    </svg>
     <div class="container-fluid">
-        <div class="row index-background main">
-            <div class="col-sm-12 col-md-10 mp-reset">
-                <svg class="intro mp-reset" viewbox="10 0 200 86">
+        <div class="row">
+            <div class="col-md-12 col-lg-10 mp-reset">
+                <svg class="intro mp-reset" viewbox="0 0 100 100" preserveAspectRatio="xMinYMid meet">
                     <text text-anchor="start" x="0" y="40" class="text text-stroke" clip-path="url(#text1)">Kevin Flerlage</text>
                     <text text-anchor="start" x="0" y="40" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Kevin Flerlage</text>
                     <defs>
@@ -57,7 +56,7 @@
                     </defs>
                 </svg>
             </div>
-            <div class="col-sm-12 col-md-2 mp-reset">
+            <div class="col-md-12 col-lg-2 mp-reset">
                 <div class="link-list">
                     <a href="./portfolio.html">
                         <div class="index-link-box item-1">

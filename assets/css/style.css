@@ -21,10 +21,15 @@ a:hover {
 .clearfix {
 	overflow: auto;
 }
-svg{
+.svg-background{
     margin: 0;
     height: 100vh;
 	width: 100%;
+	position: relative;
+}
+.intro {
+	width: 100%;
+	word-wrap: normal;
 }
 /* No height so the SVGs sit properly on the page */
 .no-height {
@@ -364,7 +369,7 @@ svg{
 		margin-top: 30px;
 	}
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 1000px){
 	.index-link-box {
 		margin: 0;
 	}
