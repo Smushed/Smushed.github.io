@@ -13,7 +13,7 @@ svg.intro.go .text {
 }
 svg.intro.go .text-stroke {
     fill: none;
-    stroke: #70D0DF;
+    stroke: rgb(92, 174, 187);
     stroke-width: 14px;
     stroke-dashoffset: -900;
     stroke-dasharray: 900;
@@ -28,7 +28,7 @@ svg.intro.go .text-stroke:nth-child(3) {
     animation-delay: 0.9s;
 }
 svg.intro.go .text-stroke-2 {
-    stroke: rgb(190, 226, 233);
+    stroke: rgb(190, 236, 245);
     animation-delay: 1.2s;
 }
 svg.intro.go .text-stroke:nth-child(5) {

@@ -64,7 +64,7 @@ a:hover {
 	display: inline-block;
 }
 .main{
-	background: #23B0A8;
+	background: rgb(26, 151, 145);
 	height: 100vh;
 }
 .index-link-box {
@@ -85,7 +85,7 @@ a:hover {
 	padding-right: 25px;
 	padding-top: 5%;
 	font-size: 24px;
-	color: #B4E0E9;
+	color: rgb(197, 237, 245);
 	position: absolute;
 }
 .main-text {
@@ -212,7 +212,7 @@ a:hover {
 }
 /* Scrolling buttons for the portfolio page */
 .right-arrow {
-	background: rgba(128, 128, 128, 0.85);
+	background: rgba(128, 128, 128, 0.219);
 	cursor: pointer;
 	height: 75px;
 	width: 75px;
@@ -225,7 +225,7 @@ a:hover {
 	animation: bounceRight 1s infinite;
 }
 .left-arrow {
-	background: rgba(128, 128, 128, 0.85);
+	background: rgba(128, 128, 128, 0.219);
 	cursor: pointer;
 	height: 75px;
 	width: 75px;
@@ -239,24 +239,37 @@ a:hover {
 	background-color: rgba(128, 128, 128, 0.85);
 }
 /* About Me */
-.about-me {
-	border: darkgrey solid 2px;
-	margin-top: 25vh;
-	position: absolute;
-	width: 100%;
-	background: rgba(130, 174, 187, 0.97);
-}
 .photo {
-	position: absolute;
 	border-radius: 50%;
-	margin-left: 2%;
-	top: -150px;
+	margin-left: 50%;
+	transform:translateX(-50%);
+	margin-top: 25px;
 }
 .title {
 	position: absolute;
 	font-size: 45px;
 	top: -60px;
 	left: 220px;
+}
+.about-me-photo {
+	padding: 0 15px 5px 15px;
+	background: rgb(198, 246, 255);
+	box-shadow: -10px 10px #1A7F88;
+	float: right;
+	margin-top: -495px;
+	height: 350px;
+	width: 300px;
+}
+.about-me-title {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width: 100%;
+	color: #383838;
+}
+.introduction {
+	background: #BEECF5;
 }
 .bio {
 	margin-top: 65px;
@@ -267,19 +280,19 @@ a:hover {
 	margin-bottom: 50px;
 }
 .about-me-background {
-	background-image: linear-gradient(#56737E, #354A4E);
-	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
+	background: #1A7F88;
 	overflow: hidden;
+	height: 100%;
 }
 /* SVG colorings */
 .purple-triangle {
     fill:#9B83C1;
 }
 .light-blue-triangle {
-    fill:rgb(112, 208, 223);
+    fill:rgb(94, 179, 192);
 }
 .baby-blue-triangle {
-    fill:rgb(135, 232, 247);
+    fill:rgb(126, 219, 233);
 }
 .red-triangle {
     fill: #EC5A5A;
@@ -288,10 +301,10 @@ a:hover {
 	fill: #D18CBB;
 }
 .mango-triangle {
-	fill: rgb(251, 204, 52);
+	fill: rgb(233, 190, 51);
 }
 .transparent-mango-triangle {
-	fill: rgba(240, 195, 47, 0.568);
+	fill: rgba(221, 181, 48, 0.568);
 }
 .orange-triangle {
 	fill: #F5A036;
@@ -300,25 +313,25 @@ a:hover {
 	fill: #6BC28B;
 }
 .lime-triangle {
-	fill: #C5DB4A;
+	fill: rgb(180, 201, 64);
 }
 .dark-lime-triangle {
-	fill: #B5CA47;
+	fill: rgb(162, 182, 63);
 }
 .blue-triangle {
-	fill: #4A6EE6;
+	fill: rgb(66, 98, 202);
 }
 .dull-blue-triangle {
-	fill: #74A0EB;
+	fill: rgb(104, 142, 207);
 }
 .dark-blue-triangle {
-	fill: #2248D1;
+	fill: rgb(29, 62, 179);
 }
 .dark-magenta-triangle {
-	fill: #9E3569;
+	fill: rgb(128, 40, 84);
 }
 .magenta-triangle {
-	fill: #C41570;
+	fill: rgb(173, 19, 99);
 }
 /* Animation for the arrows to move on hover */
 @keyframes bounceRight {
@@ -341,6 +354,9 @@ a:hover {
 	.description {
 		margin-right: 0;
 	}
+	.about-me-photo {
+		margin-right: 0;
+	}
 }
 /* Drops the description to the bottom of the slide */
 @media screen and (max-width: 1100px){
@@ -354,6 +370,9 @@ a:hover {
 		box-shadow: -10px -10px #1E3849;
 	}
 	.description-title{
+		margin-left: 40%;
+	}
+	.about-me-title{
 		margin-left: 40%;
 	}
 	.carousel-indicators {
