@@ -130,7 +130,7 @@ a:hover {
 /* Portfolio Page */
 .showcase {
 	margin: auto;
-	margin-top: 18vh;
+	margin-top: 6vh;
 	height: 600px;
 	min-height: 400px;
 	width: 100%;
@@ -198,6 +198,32 @@ a:hover {
 .project-2-button {
 	background: rgb(224, 195, 122);
 }
+/* About Me and Portfolio Nav Bar Links */
+.nav-link-box {
+	height: 8vh;
+	margin: 2vh 0 4vh 0;
+	border-radius: 2px;
+	background: #23B0A8;
+	background: linear-gradient(to right, rgba(35, 176, 169, 0) 50%, #496EE6 50%);
+	background-size: 200% 100%;
+	background-position: left bottom;
+	transition: all 1.25s ease;
+}
+.right-nav {
+	background: linear-gradient(to right, rgba(35, 176, 169, 0) 50%, #496EE6 50%);
+	background-size: 200% 100%;
+}
+.nav-link-box:hover {
+	background-position:right bottom;
+}
+.nav-link {
+	width: 100%;
+	padding-right: 25px;
+	padding-top: 5%;
+	font-size: 24px;
+	color: rgb(197, 237, 245);
+	position: absolute;
+}
 /* Portfolio background & SVG */
 .portfolio-background {
 	background-color: rgb(29, 55, 73);
@@ -240,7 +266,7 @@ a:hover {
 }
 /* About Me */
 .photo {
-	border-radius: 50%;
+	border-radius: 3px;
 	margin-left: 50%;
 	transform:translateX(-50%);
 	margin-top: 25px;
@@ -283,6 +309,7 @@ a:hover {
 	background: #1A7F88;
 	overflow: hidden;
 	height: 100%;
+	width: 100%;
 }
 /* SVG colorings */
 .purple-triangle {

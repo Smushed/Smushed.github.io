@@ -15,24 +15,27 @@
 
 <body id="top">
     <div class="container-fluid portfolio-background mp-reset">
-        <!-- This should be a drop down to go to the other pages in here -->
-        <div class="row no-height">
-            <div class="col-12 mp-reset">
-                <div class="dropdown">
-                    <button class="menu top" tabindex="1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="Dropdown-button">
-                        <a class="dropdown-item" href="index.html">Home</a>
-                        <a class="dropdown-item" href="about-me.html">About Me</a>
+        <div class="row">
+            <div class="col-2 mp-reset">
+                <a href="./index.html">
+                    <div class="nav-link-box right-nav">
+                        <div class="text-right index-link">Home</div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-8 mp-reset"></div>
+            <div class="col-2 mp-reset">
+                <a href="./about-me.html">
+                    <div class="nav-link-box">
+                        <div class="text-right index-link">About Me</div>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- Main Content of the page -->
         <div class="row">
             <div class="col-12 mp-reset">
-                <div class="carousel slide whole-carousel clearfix" data-interval="false" data-keyboard="true" id="portfolio-carousel"
-                    data-ride="carousel">
+                <div class="carousel slide whole-carousel clearfix" data-interval="false" data-keyboard="true" id="portfolio-carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="showcase project-1"></div>
@@ -68,15 +71,13 @@
                         </div>
                     </div>
                     <div class="top">
-                        <a class="carousel-control-prev left-arrow" tabindex="2" href="#portfolio-carousel" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev left-arrow" tabindex="2" href="#portfolio-carousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                     </div>
                     <div class="top">
-                        <a class="carousel-control-next right-arrow" tabindex="4" href="#portfolio-carousel" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next right-arrow" tabindex="4" href="#portfolio-carousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
