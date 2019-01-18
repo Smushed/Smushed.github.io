@@ -6,6 +6,7 @@
 body {
 	font-family: 'Oswald', sans-serif;
 	height: 100vh;
+	overflow: hidden;
 }
 a {
 	color: black;
@@ -186,11 +187,19 @@ a:hover {
 	background-position: left bottom;
 	transition: all 1.25s ease;
 }
-.left-nav-text {
-	margin-left: 20px;
-}
 .nav-link-box:hover {
 	background-position:right bottom;
+}
+.left-nav-box {
+	background: linear-gradient(to left, rgba(35, 176, 169, 0) 50%, #496EE6 50%);
+	background-position: right bottom;
+	background-size: 200% 100%;
+}
+.left-nav-box:hover {
+	background-position:left bottom;
+}
+.left-nav-text {
+	margin-left: 20px;
 }
 .nav-link {
 	width: 100%;
@@ -204,7 +213,6 @@ a:hover {
 .portfolio-background {
 	background-color: rgb(29, 55, 73);
 	/* This needs to be in here to ensure the SVGs don't go over the edge of the screen */
-	overflow: hidden;
 	transition-duration: 300ms;
 	transition: background-color 1.25s ease;
 }
@@ -258,8 +266,8 @@ a:hover {
 	background: rgb(198, 246, 255);
 	box-shadow: -10px 10px #1A7F88;
 	float: right;
-	margin-top: -495px;
-	height: 350px;
+	margin-top: -550px;
+	height: 400px;
 	width: 300px;
 }
 .about-me-title {
@@ -269,6 +277,16 @@ a:hover {
 	margin-top: 15px;
 	width: 100%;
 	color: #383838;
+}
+.about-me-showcase {
+	margin: auto;
+	margin-top: 6vh;
+	height: 650px;
+	min-height: 400px;
+	width: 100%;
+	max-width: 1100px;
+	padding: 2px;
+	border: 2px darkgrey solid;
 }
 .introduction {
 	background: #BEECF5;
@@ -283,7 +301,6 @@ a:hover {
 }
 .about-me-background {
 	background: #1A7F88;
-	overflow: hidden;
 	height: 100%;
 	width: 100%;
 }
