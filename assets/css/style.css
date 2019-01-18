@@ -35,29 +35,6 @@ a:hover {
 .no-height {
 	height: 0;
 }
-/* Customizing the menu button outside of just bootstrap*/
-.menu {
-	margin-left: 50px;
-	margin-top: 10px;
-	height: 50px;
-	width: 50px;
-	border: 0;
-	background: rgba(192, 192, 192, 0.589);
-	background-image: url('../images/menu.png');
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 40px 40px;
-	border-radius: 50%;
-	position: absolute;
-}
-.menu:focus {
-	outline: none;
-}
-.menu:hover {
-	transform: scale(1.1);
-	transition-duration: 300ms;
-	box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.582);
-}
 /* Index Page */
 .portfolio
 .about-me-preview {
@@ -209,9 +186,8 @@ a:hover {
 	background-position: left bottom;
 	transition: all 1.25s ease;
 }
-.right-nav {
-	background: linear-gradient(to right, rgba(35, 176, 169, 0) 50%, #496EE6 50%);
-	background-size: 200% 100%;
+.left-nav-text {
+	margin-left: 20px;
 }
 .nav-link-box:hover {
 	background-position:right bottom;
