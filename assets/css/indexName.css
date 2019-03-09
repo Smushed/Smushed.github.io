@@ -19,7 +19,7 @@ svg.intro.go .text-stroke {
     stroke-dasharray: 900;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    animation: dash 2.0s ease-in-out forwards;
+    animation: dash 1.5s ease-in-out forwards;
 }
 svg.intro.go .text-stroke:nth-child(2) {
     animation-delay: 0.3s;
