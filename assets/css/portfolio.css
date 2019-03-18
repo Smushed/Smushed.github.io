@@ -37,98 +37,18 @@
     height: 100vh;
 }
 
-/* Project Display */
-.showcase {
-	margin: 0 auto;
-	height: 600px;
-	min-height: 400px;
-	width: 100%;
-	max-width: 1100px;
-	padding: 2px;
-}
-
 /* The description of the project */
-.description {
-	float: right;
-	margin-top: -495px;
-	margin-right: 15%;
-	height: 350px;
-	width: 300px;
-	box-shadow: -10px 10px #1E3849;
-}
-.description-title {
-	font-size: 30px;
-	font-weight: 500;
-	margin-left: 35%;
-	margin-bottom: 15px;
-}
-.description-text {
-	padding: 0 15px 5px 15px;
-}
-.view-project {
-	padding: 0 5px;
-	border-radius: 15%;
-	width: 120px;
-	height: 35px;
-	border: 2px solid black;
-	position: relative;
-	left: 90px;
-}
-.view-project:focus {
-	outline: none;
-}
-.view-project:hover {
-	box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.582);
-	transition-duration: 300ms;
-}
-.view-project:active {
-	background: rgb(141, 94, 94);
-	transform: translateY(2px);
-}
-.project-1-button {
+.project {
+	height: 21vh;
+	background: white;
 	margin-top: 50px;
-	background: rgb(224, 150, 150);
-}
-.project-2-button {
-	background: rgb(224, 195, 122);
 }
 
-/* Media queries to make the description drop down in portfolio */
-@media screen and (max-width: 1550px){
-	.description {
-		margin-right: 0;
-	}
-	.about-me-photo {
-		margin-right: 0;
-	}
+.project-padding {
+	padding-left: 20px;
+	padding-right: 20px;
 }
-/* Drops the description to the bottom of the slide */
-@media screen and (max-width: 1100px){
-	.description {
-		margin-right: 50%;
-		transform: translate(50%, 0);
-		width: 450px;
-		height: 200px;
-		max-width: 100%;
-		margin-top: -70px;
-		box-shadow: -10px -10px #1E3849;
-	}
-	.description-title{
-		margin-left: 40%;
-	}
-	.about-me-title{
-		margin-left: 40%;
-	}
-	.carousel-indicators {
-		display: none;
-	}
-	.showcase {
-		margin-top: 75px;
-	}
-	.view-project {
-		left: 170px;
-	}
-	.project-1-button {
-		margin-top: 30px;
-	}
+
+.project-1 {
+	margin-top: 0;
 }
