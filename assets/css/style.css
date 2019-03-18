@@ -152,45 +152,7 @@ a:hover {
 	100% 		{ transform:translateX(0); }
 }
 
-/* Media queries to make the description drop down in portfolio */
-@media screen and (max-width: 1550px){
-	.description {
-		margin-right: 0;
-	}
-	.about-me-photo {
-		margin-right: 0;
-	}
-}
-/* Drops the description to the bottom of the slide */
-@media screen and (max-width: 1100px){
-	.description {
-		margin-right: 50%;
-		transform: translate(50%, 0);
-		width: 450px;
-		height: 200px;
-		max-width: 100%;
-		margin-top: -70px;
-		box-shadow: -10px -10px #1E3849;
-	}
-	.description-title{
-		margin-left: 40%;
-	}
-	.about-me-title{
-		margin-left: 40%;
-	}
-	.carousel-indicators {
-		display: none;
-	}
-	.showcase {
-		margin-top: 75px;
-	}
-	.view-project {
-		left: 170px;
-	}
-	.project-1-button {
-		margin-top: 30px;
-	}
-}
+
 @media screen and (max-width: 1000px){
 	.index-link-box {
 		margin: 0;
