@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Kevin Flerlage</title>
+</head>
+
+<body id="top">
+    <div class="container-fluid portfolio-background mp-reset">
+        <div class="row">
+            <div class="col-2 mp-reset">
+                <a href="./index.html">
+                    <div class="nav-link-box left-nav-box">
+                        <div class="left-nav-text index-link">Home</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-10 mp-reset"></div>
+        </div>
+
+        <!-- Main Content of the page -->
+        <div class="row project-padding">
+            <div class="d-none d-md-block col-md-2"></div>
+            <div class="col-12 col-md-8 mp-reset">
+                <div class="project project-1 clearfix">
+                    <a href="https://bookclubs.heroku.com/" target="_blank">
+                        <div class="row mp-reset">
+                            <div class="col-12 col-xl-3 mp-reset">
+                                <img class="project-image" src="./assets/images/portfolioImages/BookWorm.PNG" alt="BookWorm">
+                            </div>
+                            <div class="col-12 col-xl-9 mp-reset">
+                                <div class="plan-title">
+                                    BookWorm
+                                </div>
+                                <div class="project-description">
+                                    Helping users attain their goal of reading more by building a community around what they would like to read. This
+                                    application is created to help users create bookclubs online and keep everyone on track.
+                                    <br />
+                                    <br />
+                                    Bookworm allows users to create clubs, add their friends and assign books for them to read together. All the while
+                                    there is a post mechanic which is unique to each group. This allows users of the groups to communicate and discuss
+                                    the
+                                    book online.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-2"></div>
+        </div>
+        <div class="row project-padding">
+            <div class="d-none d-md-block col-md-2"></div>
+            <div class="col-12 col-md-8 mp-reset">
+                <div class="project clearfix">
+                    <a href="https://bark-book.herokuapp.com/" target="_blank">
+                        <div class="row mp-reset">
+                            <div class="col-12 col-xl-3 mp-reset">
+                                <img class="project-image" src="./assets/images/portfolioImages/Bark.PNG" alt="Bark">
+                            </div>
+                            <div class="col-12 col-xl-9 mp-reset">
+                                <div class="plan-title">
+                                    Bark!
+                                </div>
+                                <div class="project-description">
+                                    Connecting users with other dog lovers in their area. Bark was designed to be mobile first. This app focuses on
+                                    owners
+                                    of specific breeds of dogs. A user
+                                    signs up, adds the dogs they own to their profile and connects with others in their area with the same breed of
+                                    dog.
+                                    <br />
+                                    <br />
+                                    Bark is focused creating groups where users can share ideas about their breed and their specific issues with that
+                                    breed of dog. Bark also has a feature which you can mark your dog as lost and others in your area will be able to
+                                    see.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-2"></div>
+        </div>
+        <div class="row project-padding">
+            <div class="d-none d-md-block col-md-2"></div>
+            <div class="col-12 col-md-8 mp-reset">
+                <div class="project clearfix">
+                    <a href="https://smushed.github.io/PlanEasy/" target="_blank">
+                        <div class="row mp-reset">
+                            <div class="col-12 col-xl-3 mp-reset">
+                                <img class="project-image project-3-image" src="./assets/images/portfolioImages/PlanEasy.PNG" alt="Plan Easy">
+                            </div>
+                            <div class="col-12 col-xl-9 mp-reset">
+                                <div class="plan-title">
+                                    Plan Easy
+                                </div>
+                                <div class="project-description">
+                                    It's a terrible feeling sitting at home when you want to be out, Plan Easy connects you with your friends to sync
+                                    your
+                                    freetime. A single page web application has users create an account, and mark their freetime over the next seven
+                                    days.
+                                    <br />
+                                    <br />
+                                    Plan Easy is built entirely on the front end, with Firebase handling the database as well as the user
+                                    authentication.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-2"></div>
+        </div>
+    </div>
+
+    <script src="assets/JS/jquery-3.3.1.min.js"></script>
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/portfolioapp.js"></script>
+</body>
+
+</html>

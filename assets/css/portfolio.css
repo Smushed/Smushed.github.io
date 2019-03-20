@@ -39,16 +39,46 @@
 
 /* The description of the project */
 .project {
-	height: 21vh;
+	height: 205px;
 	background: white;
-	margin-top: 50px;
+	margin-top: 30px;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
 }
-
+.project:hover {
+	transform: scale(1.1)
+}
 .project-padding {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 .project-1 {
 	margin-top: 0;
+}
+.project-image {
+	height: 21vh;
+	margin-left: 50px;
+}
+.project-3-image {
+	margin-left: 60px;
+}
+.plan-title {
+	font-size: 30px;
+	font-weight: 600;
+}
+.clearfix {
+	overflow: auto;
+}
+
+@media screen and (max-width: 1600px){
+	.project-image {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.project-image {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
 }
