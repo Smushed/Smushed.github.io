@@ -70,22 +70,6 @@ a:hover {
 .main-text {
 	height: 200px;
 }
-/* Portfolio Page */
-.project-1 {
-	background-image: url("../images/portfolioImages/Hangman.PNG");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 100%;
-}
-.project-1-color {
-	background: lightcoral;
-}
-.project-2-color {
-	background: goldenrod;
-}
-.project-2 {
-	background: lightgreen;
-}
 
 /* SVG colorings */
 .purple-triangle {
