@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/OrcFavicon.png">
+    <link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/indexName.css">
     <title>Kevin Flerlage</title>
 </head>
@@ -46,15 +46,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-lg-10 mp-reset">
-                <svg class="intro mp-reset" viewbox="0 0 100 100" preserveAspectRatio="xMinYMid meet">
-                    <text text-anchor="start" x="0" y="40" class="text text-stroke" clip-path="url(#text1)">Kevin Flerlage</text>
-                    <text text-anchor="start" x="0" y="40" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Kevin Flerlage</text>
-                    <defs>
-                        <clipPath id="text1">
-                            <text text-anchor="start" x="0" y="40" class="text">Kevin Flerlage</text>
-                        </clipPath>
-                    </defs>
-                </svg>
+                <div>
+                    <svg class="intro mp-reset" viewbox="0 0 100 100" preserveAspectRatio="xMinYMid meet">
+                        <text text-anchor="start" x="0" y="40" class="text text-stroke" clip-path="url(#text1)">Kevin Flerlage</text>
+                        <text text-anchor="start" x="0" y="40" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Kevin Flerlage</text>
+                        <defs>
+                            <clipPath id="text1">
+                                <text text-anchor="start" x="0" y="40" class="text">Kevin Flerlage</text>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
             </div>
             <div class="col-md-12 col-lg-2 mp-reset">
                 <div>
@@ -65,14 +67,11 @@
                             </div>
                         </div>
                     </a>
-                    <a href="./about-me.html">
+                    <a href="./assets/resume/Kevin Flerlage Resume.pdf">
                         <div class="index-link-box">
-                            <div class="text-right index-link">About Me</div>
+                            <div class="text-right index-link">Resume</div>
                         </div>
                     </a>
-                    <div class="index-link-box">
-                        <div class="text-right index-link">Resume</div>
-                    </div>
                     <a href="https://www.linkedin.com/in/kevinflerlage/" target="_blank">
                         <div class="index-link-box">
                             <div class="text-right index-link">LinkedIn</div>
