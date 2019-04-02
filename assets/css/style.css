@@ -64,27 +64,11 @@ a:hover {
 	padding-right: 25px;
 	padding-top: 5%;
 	font-size: 24px;
-	color: rgb(197, 237, 245);
+	color: rgb(216, 242, 247);
 	position: absolute;
 }
 .main-text {
 	height: 200px;
-}
-/* Portfolio Page */
-.project-1 {
-	background-image: url("../images/portfolioImages/Hangman.PNG");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 100%;
-}
-.project-1-color {
-	background: lightcoral;
-}
-.project-2-color {
-	background: goldenrod;
-}
-.project-2 {
-	background: lightgreen;
 }
 
 /* SVG colorings */
