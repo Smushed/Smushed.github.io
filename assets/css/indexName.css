@@ -28,7 +28,7 @@ svg.intro.go .text-stroke:nth-child(3) {
     animation-delay: 0.9s;
 }
 svg.intro.go .text-stroke-2 {
-    stroke: rgb(190, 236, 245);
+    stroke: rgb(216, 244, 250);
     animation-delay: 1.2s;
 }
 svg.intro.go .text-stroke:nth-child(5) {
@@ -45,4 +45,19 @@ svg.intro.go .text-stroke:nth-child(6) {
 .intro {
     margin-left: 45px;
     margin-top: 15px;
+}
+
+@media screen and (max-width:774px) {
+    .svg-name {
+        display: none;
+    }
+    .intro {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width:775px) {
+    .mobile-name {
+        display: none;
+    }
 }
