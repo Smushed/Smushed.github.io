@@ -40,13 +40,16 @@
 /* The description of the project */
 .project {
 	height: 220px;
-	background: white;
+	background: #F8F4EA;
 	margin-top: 30px;
 	border-radius: 5px;
 	transition: all .3s ease-in-out;
 }
 .project:hover {
 	transform: scale(1.1)
+}
+.project-description {
+	margin-top: 25px;
 }
 .project-padding {
 	padding-left: 20px;
@@ -59,6 +62,10 @@
 	height: 21vh;
 	margin-left: 50px;
 	margin-top: 5px;
+}
+.football-image {
+	height: 17vh;
+	margin-top: 25px;
 }
 .project-3-image {
 	margin-left: 60px;
